@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <title> </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+			<script type="application/x-javascript" src="strings.js" ></script>
+    </head>
+<body>
+
+	<form method="post" onsubmit="document.getElementById('vowelsFound').innerHTML = document.getElementById('toFindVowels').value.findVowels(); return false;">
+		Поиск гласных:<br>
+		<TEXTAREA id='toFindVowels' COLS=64 ROWS=6>Мы поедем, мы помчимся на оленях утром ранним.</TEXTAREA>
+		<INPUT TYPE=SUBMIT>
+		<TEXTAREA id="vowelsFound" COLS=64 ROWS=6></TEXTAREA>
+	</form> 
+
+	<form method="post" onsubmit="document.getElementById('consonantsFound').value = document.getElementById('toFindConsonants').value.findConsonants(); return false;">
+		Поиск согласных:<br>
+		<TEXTAREA id='toFindConsonants' COLS=64 ROWS=6>Мы поедем, мы помчимся на оленях утром ранним.</TEXTAREA>
+		<INPUT TYPE=SUBMIT>
+		<TEXTAREA id="consonantsFound" COLS=64 ROWS=6></TEXTAREA>
+	</form> 
+
+	<form method="post" onsubmit="document.getElementById('divided').value = document.getElementById('toSyllables').value.toSyllables(); return false;">
+		Делим по слогам:<br>
+		<TEXTAREA id='toSyllables' COLS=64 ROWS=6>Мы поедем, мы помчимся на оленях утром ранним.</TEXTAREA>
+		<INPUT TYPE=SUBMIT>
+		<TEXTAREA id="divided" COLS=64 ROWS=6></TEXTAREA>
+	</form> 
+
+	<form method="post" onsubmit="document.getElementById('count').value = document.getElementById('wordToCount').value.wordsCount(); return false;">
+		Считаем слова:<br>
+		<TEXTAREA id='wordToCount' COLS=64 ROWS=6>Мы поедем, мы помчимся на оленях утром ранним.</TEXTAREA>
+		<INPUT TYPE=SUBMIT>
+		<TEXTAREA id="count" COLS=64 ROWS=6></TEXTAREA>
+	</form> 
+
+	<form method="post" onsubmit="document.getElementById('prefixFound').value = document.getElementById('toFindPrefix').value.toFindPrefix(); return false;">
+		Поиск приставки:<br>
+		<TEXTAREA id='toFindPrefix' COLS=64 ROWS=6>Мы поедем, мы помчимся на оленях утром ранним.</TEXTAREA>
+		<INPUT TYPE=SUBMIT>
+		<TEXTAREA id="prefixFound" COLS=64 ROWS=6></TEXTAREA>
+	</form> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+</html>
